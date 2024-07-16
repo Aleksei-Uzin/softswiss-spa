@@ -1,0 +1,47 @@
+@use '../../../scss/media' as m;
+@use '../../../scss/colors' as c;
+
+.menu_button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu_button_item-1,
+.menu_button_item-2,
+.menu_button_item-3 {
+  width: 1.4rem;
+  height: 0.125rem;
+  background-color: c.$white;
+  margin: 0.5rem 0;
+  transition: 0.5s;
+}
+
+.menu_button-collapsed {
+  display: none;
+}
+
+@media (max-width: m.$mobile) {
+  .menu_button-collapsed {
+    display: inline-block;
+  }
+}
+
+@media (min-width: m.$mobile) {
+  .menu_button-expanded {
+    display: none;
+  }
+}
+
+.menu_button-expanded {
+  .menu_button_item-1 {
+    transform: translate(0, 0.6rem) rotate(-45deg);
+  }
+
+  .menu_button_item-2 {
+    opacity: 0;
+  }
+
+  .menu_button_item-3 {
+    transform: translate(0, -0.6rem) rotate(45deg);
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../../scss/colors' as c;
+
+.logo {
+  color: c.$pink;
+}
+
+.logo-icon-go {
+  width: 2.75rem;
+}

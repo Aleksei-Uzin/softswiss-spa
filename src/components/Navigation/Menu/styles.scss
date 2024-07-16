@@ -1,0 +1,33 @@
+@use '../../../scss/colors' as c;
+@use '../../../scss/media' as m;
+
+.menu {
+  display: none;
+}
+
+.menu-expanded {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 3.875rem;
+  margin-left: -1.25rem;
+  background: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid c.$pink;
+}
+
+@media (min-width: m.$mobile) {
+  .menu {
+    display: flex;
+    gap: 2.2rem;
+    font-size: 1.125rem;
+    list-style-type: none;
+    transition: padding 0.5s ease;
+  }
+
+  .menu-expanded {
+    position: initial;
+    flex-direction: row;
+    background: initial;
+    border-top: none;
+  }
+}

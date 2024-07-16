@@ -1,0 +1,29 @@
+@use '../../../scss/colors' as c;
+@use '../../../scss/media' as m;
+
+.menu_anchor {
+  display: block;
+  width: m.$mobile;
+  padding: 1.8rem 0;
+  text-align: center;
+  text-decoration: none;
+  background: c.$black;
+  border-bottom: 1px solid c.$pink;
+  color: c.$white;
+}
+
+.menu_anchor:hover {
+  transition: color 0.5s ease;
+  background-image: linear-gradient(90deg, c.$yellow, c.$pink);
+  color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: m.$mobile) {
+  .menu_anchor {
+    width: auto;
+    padding: 0;
+    background: initial;
+    border-bottom: none;
+  }
+}

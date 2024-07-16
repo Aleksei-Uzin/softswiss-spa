@@ -1,0 +1,29 @@
+@use '../../scss/colors' as c;
+@use '../../scss/media' as m;
+
+@mixin y-coords-padding($top: 0.75rem, $bottom: 0.75rem) {
+  transition: padding 0.5s ease;
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+.navigation {
+  @include y-coords-padding;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: c.$black;
+}
+
+@media (min-width: m.$mobile) {
+  .navigation {
+    @include y-coords-padding($top: 1.625rem, $bottom: 1.75rem);
+  }
+}
+
+@media (min-width: m.$desktop) {
+  .navigation {
+    @include y-coords-padding($top: 1.5rem, $bottom: 1.25rem);
+  }
+}
