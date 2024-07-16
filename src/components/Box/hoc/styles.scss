@@ -1,0 +1,23 @@
+@use '../../../scss/media' as m;
+
+@mixin x-coords-padding($size: 1.25rem) {
+  transition: padding 0.5s ease;
+  padding-right: $size;
+  padding-left: $size;
+}
+
+.rightLeftPaddings {
+  @include x-coords-padding;
+}
+
+@media (min-width: m.$tablets) {
+  .rightLeftPaddings {
+    @include x-coords-padding($size: 1.875rem);
+  }
+}
+
+@media (min-width: m.$desktop) {
+  .rightLeftPaddings {
+    @include x-coords-padding($size: 5rem);
+  }
+}
