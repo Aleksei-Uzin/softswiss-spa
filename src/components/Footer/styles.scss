@@ -1,0 +1,21 @@
+@use '../../scss/colors' as c;
+
+.footer {
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  background: c.$black;
+}
+
+.footer_content {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: c.$yellow;
+}
+
+.footer_logo {
+  display: block;
+  margin: 0 auto;
+  rotate: 60deg;
+  transform: translateY(-6px) translateX(-10px) scale(2);
+}
