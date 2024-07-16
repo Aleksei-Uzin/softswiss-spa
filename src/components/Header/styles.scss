@@ -1,5 +1,53 @@
 @use '../../scss/colors' as c;
+@use '../../scss/media' as m;
 
 .header {
-  background: c.$black;
+  padding-top: 15.625rem;
+  padding-bottom: 2.75rem;
+  text-align: center;
+  background-image: url('assets/planet.png'), url('assets/header-bg.jpg');
+  background-position-y: -114px, center;
+  background-position-x: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 355px, cover;
+  background-color: c.$black;
+}
+
+.header_content {
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.header_button {
+  background: c.$yellow;
+  color: c.$black;
+}
+
+.header_title_tail-pink {
+  color: c.$pink;
+}
+
+.header_title_tail-yellow {
+  color: c.$yellow;
+}
+
+@media (min-width: m.$mobile) {
+  .header {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    text-align: left;
+    background-position-y: center, center;
+    background-position-x: calc(100% + 120px), center;
+  }
+
+  .header_content {
+    margin-bottom: 1.375rem;
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: m.$tablets) {
+  .header_content {
+    font-size: 2rem;
+  }
 }
