@@ -1,0 +1,21 @@
+@use '../../../scss/media' as m;
+
+.title_h2 {
+  margin-bottom: 1.875rem;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+@media (min-width: m.$mobile) {
+  .title_h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: m.$tablets) {
+  .title_h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
+}
