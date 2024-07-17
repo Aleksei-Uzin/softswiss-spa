@@ -1,8 +1,19 @@
-# React + Vite
+# SOFTSWISS SPA: React + Vite + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Commands to start the project:**
 
-Currently, two official plugins are available:
+```shell
+npm install
+npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Time to develop the project:** `12 hours`
+
+**TODO:**
+
+- need to complete background for Header component.
+
+**Bugs:**
+
+- fix the behavior of the svg “basket” icon on hover;
+- find out the reason for horizontal scrolling on a mobile device.
