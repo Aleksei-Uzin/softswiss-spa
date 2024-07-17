@@ -1,4 +1,5 @@
 import React from 'react'
+import { getClassName } from '../../../utils'
 import './styles.scss'
 
 function withLeftRightPadding<P extends { className?: string }>(Comp: {
@@ -6,12 +7,9 @@ function withLeftRightPadding<P extends { className?: string }>(Comp: {
   displayName?: string
 }) {
   function Wrapper(props: P) {
-    return (
-      <Comp
-        {...props}
-        className={`rightLeftPaddings ${props.className || ''}`}
-      />
-    )
+    const classes = getClassName('rightLeftPaddings', props.className || '')
+
+    return <Comp {...props} className={classes} />
   }
 
   Wrapper.displayName = `withLeftRightPadding(${Comp.displayName || Comp.name})`
