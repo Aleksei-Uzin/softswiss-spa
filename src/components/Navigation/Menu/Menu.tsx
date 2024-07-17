@@ -1,6 +1,6 @@
 import React from 'react'
 import MenuItem from '../MenuItem'
-import { IconBasket } from '../../../icons'
+import MenuItemSVG from '../MenuItemSVG'
 import { useMenuContext } from '../useMenuContext'
 import { getClassName } from '../../../utils'
 import './styles.scss'
@@ -15,7 +15,7 @@ export default function Menu() {
       <MenuItem>Home</MenuItem>
       <MenuItem>Products</MenuItem>
       <MenuItem>
-        <IconBasket />
+        <MenuItemSVG />
       </MenuItem>
     </ul>
   )

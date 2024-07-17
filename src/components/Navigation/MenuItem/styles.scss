@@ -13,10 +13,15 @@
 }
 
 .menu_anchor:hover {
-  transition: color 0.5s ease;
-  background-image: linear-gradient(90deg, c.$yellow, c.$pink);
-  color: transparent;
-  background-clip: text;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.5s ease;
+
+  .menu_anchor_wrapper {
+    background-image: linear-gradient(90deg, c.$yellow, c.$pink);
+    transition: color 0.5s ease;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 @media (min-width: m.$mobile) {

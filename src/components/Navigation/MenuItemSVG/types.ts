@@ -1,4 +1,4 @@
-export type MenuItemPropsType = {
+export type MenuItemSVGPropsType = {
   children: JSX.Element | string
   url?: string
 }

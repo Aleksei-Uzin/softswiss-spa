@@ -1,0 +1,12 @@
+.menu_item_icon {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.25rem;
+}
+
+.menu_item_icon-secondary,
+.menu_item_icon-primary {
+  position: absolute;
+  left: 0;
+}
