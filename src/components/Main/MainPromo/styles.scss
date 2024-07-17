@@ -1,0 +1,41 @@
+@use '../../../scss/media' as m;
+
+.main_promo {
+  padding-bottom: 3.125rem;
+}
+
+.main_promo_content {
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main_promo_button {
+  padding: 0;
+  border: none;
+}
+
+.main_promo_title {
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: m.$mobile) {
+  .main_promo {
+    padding-bottom: 3.375rem;
+  }
+
+  .main_promo_content {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: m.$tablets) {
+  .main_promo {
+    padding-bottom: 3.75rem;
+  }
+
+  .main_promo_content {
+    font-size: 1.25rem;
+  }
+}

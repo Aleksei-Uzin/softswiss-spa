@@ -1,0 +1,23 @@
+@use '../../../scss/media' as m;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+@media (min-width: m.$mobile) {
+  .grid {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: m.$tablets) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 3.875rem;
+  }
+}

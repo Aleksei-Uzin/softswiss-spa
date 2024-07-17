@@ -1,0 +1,19 @@
+@use '../../scss/colors' as c;
+@use '../../scss/media' as m;
+
+.main {
+  background: linear-gradient(c.$dark-blue, c.$blue);
+  padding-top: 3.125rem;
+}
+
+@media (min-width: m.$mobile) {
+  .main {
+    padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: m.$tablets) {
+  .main {
+    padding-top: 3.625rem;
+  }
+}
