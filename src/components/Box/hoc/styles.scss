@@ -10,13 +10,13 @@
   @include x-coords-padding;
 }
 
-@media (min-width: m.$tablets) {
+@media (min-width: m.$mobile) {
   .rightLeftPaddings {
     @include x-coords-padding($size: 1.875rem);
   }
 }
 
-@media (min-width: m.$desktop) {
+@media (min-width: m.$tablets) {
   .rightLeftPaddings {
     @include x-coords-padding($size: 5rem);
   }
