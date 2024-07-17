@@ -1,0 +1,26 @@
+@use '../../scss/colors' as c;
+@use '../../scss/media' as m;
+
+.button {
+  width: fit-content;
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid c.$yellow;
+  border-radius: 6.25rem;
+  background: transparent;
+  color: c.$yellow;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: opacity 0.5s;
+  opacity: 0.6;
+}
+
+@media (min-width: m.$desktop) {
+  .button {
+    padding: 0.875rem 2.5rem;
+    font-size: 1.375rem;
+  }
+}
